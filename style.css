@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f7f6;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #33b524;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border: 2px solid transparent; /* Inicialmente sem borda */
+    transition: background-color 0.3s, border 0.3s;
+    border-radius: 8px; /* Adiciona cantos arredondados */
+}
+
+/* Efeito de destaque ao passar o mouse */
+.sidebar ul li a:hover {
+    background-color: #33b524;
+    border-color: #2a2e2b; /* Destaca com uma borda colorida */
+}
+
+/* Efeito de destaque para o item ativo */
+.sidebar ul li a.active {
+    background-color: #000000; /* Cor de fundo do item ativo */
+    border-color: #16a085;     /* Borda para o item ativo */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stats .stat {
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.stat p {
+    font-size: 28px;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+.notifications, .charts {
+    margin-top: 20px;
+}
+
+.notifications ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.notifications ul li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.charts {
+    margin-top: 20px;
+}
+
+.charts div {
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #7f8c8d;
+}
